@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "4f38cfaa96fd07d6",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "4a57116f62bf6c1b",
+        "id": "7581c65bb4d6fbac",
         "type": "tabs",
         "children": [
           {
-            "id": "6143e93bfaa8162a",
+            "id": "7abdbec435ede31a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-02-07.md",
+                "file": "AI/电压、电势、电场.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-07"
+              "title": "电压、电势、电场"
             }
           }
         ]
@@ -40,8 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "byCreatedTime",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2026-02-07 11.06.35.excalidraw.md",
+                "file": "AI/电压、电势、电场.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Drawing 2026-02-07 11.06.35.excalidraw 的出链列表"
+              "title": "电压、电势、电场 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-02-07.md",
+                "file": "书籍/操作系统导论.pdf",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026-02-07 的大纲"
+              "title": "操作系统导论 的大纲"
             }
           },
           {
@@ -186,33 +186,55 @@
     "hiddenItems": {
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
+      "canvas:新建白板": true,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
+      "command-palette:打开命令面板": true,
       "bases:新建数据库": false,
       "obsidian-kanban:创建新看板": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "homepage:Open homepage": true,
+      "iconic:打开规则书": false
     }
   },
-  "active": "6143e93bfaa8162a",
+  "active": "1705bb0b2c6e4b2d",
   "lastOpenFiles": [
-    "阿斯顿.md",
-    "2026-02-07.md",
+    "书籍/操作系统导论.pdf",
+    "AI/电压、电势、电场.md",
     "未命名看板.md",
+    "操作系统导论.pdf",
+    "书籍/计算机系统.md",
+    "Excalidraw/Drawing 2026-02-07 17.08.32.excalidraw.md",
+    "未命名 4.md",
+    "未命名 3.md",
     "未命名 1.canvas",
+    "书籍",
+    "我是你爹.md",
+    "AI/未命名/未命名.md",
+    "未命名 2.md",
+    "AI/未命名/未命名.canvas",
+    "未命名 7.canvas",
+    "Excalidraw/Drawing 2026-02-07 11.06.35.excalidraw.md",
+    "未命名 4.canvas",
+    "未命名 3.canvas",
+    "未命名 2.canvas",
+    "未命名 5.canvas",
+    "未命名 6.canvas",
+    "未命名 1.md",
+    "未命名",
+    "未命名.md",
+    "Vault.md",
+    "2026-02-07.md",
     "未命名.canvas",
     "未命名.base",
-    "Excalidraw/Drawing 2026-02-07 11.06.35.excalidraw.md",
+    "阿斯顿.md",
     "-.webp",
+    "Tags",
     "Excalidraw",
     "AI/未命名",
     "重要事项",
-    "AI",
-    "工作",
-    "未命名 1.base",
-    "未命名.md"
+    "AI"
   ]
 }
