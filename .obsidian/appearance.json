@@ -3,6 +3,6 @@
   "theme": "system",
   "nativeMenus": true,
   "translucency": false,
-  "showRibbon": true,
+  "showRibbon": false,
   "showViewHeader": true
 }

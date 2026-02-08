@@ -23,7 +23,7 @@
   "rememberDeletedItems": false,
   "maxBackups": 5,
   "dialogState": {
-    "iconMode": false,
+    "iconMode": true,
     "emojiMode": true,
     "rulePage": "file"
   },
@@ -42,11 +42,24 @@
         "6260909cd4aa658c"
       ]
     },
+    "书籍/计算机": {
+      "icon": "🖥️",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
     "工作": {
       "icon": "🏀",
       "unsynced": [
         "6260909cd4aa658c"
       ]
+    },
+    "数字电路": {
+      "icon": "lucide-lightbulb",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ],
+      "color": "orange"
     }
   },
   "bookmarkIcons": {},

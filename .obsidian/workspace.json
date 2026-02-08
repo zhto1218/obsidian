@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7581c65bb4d6fbac",
+        "id": "fe6f0c8400619ce1",
         "type": "tabs",
         "children": [
           {
-            "id": "7abdbec435ede31a",
+            "id": "0e070fdf29c40c8b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "AI/电压、电势、电场.md",
-                "mode": "source",
-                "source": false
+                "file": "书籍/电子书-开窍开悟开智.pdf"
               },
-              "icon": "lucide-file",
-              "title": "电压、电势、电场"
+              "icon": "lucide-file-text",
+              "title": "电子书-开窍开悟开智"
             }
           }
         ]
@@ -113,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/电压、电势、电场.md",
+                "file": "书籍/电子书-开窍开悟开智.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "电压、电势、电场 的出链列表"
+              "title": "电子书-开窍开悟开智 的出链列表"
             }
           },
           {
@@ -156,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "书籍/操作系统导论.pdf",
-                "followCursor": true,
-                "showSearch": false,
+                "file": "书籍/电子书-开窍开悟开智.pdf",
+                "followCursor": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "操作系统导论 的大纲"
+              "title": "电子书-开窍开悟开智 的大纲"
             }
           },
           {
@@ -201,16 +199,27 @@
   },
   "active": "1705bb0b2c6e4b2d",
   "lastOpenFiles": [
-    "书籍/操作系统导论.pdf",
-    "AI/电压、电势、电场.md",
+    "书籍/计算机/操作系统导论.pdf",
+    "书籍/计算机/计算机程序的构造和解释（第2版）.pdf",
+    "书籍/计算机/计算机是如何工作的：人人都能懂的计算机软硬件工作原理（华章程序员书库） - 马修·贾斯蒂斯.pdf",
+    "书籍/计算机/计算机体系结构量化研究方法第6版 (约翰·L.亨尼西,大卫·A.帕特森) .pdf",
+    "书籍/计算机/计算机网络自顶向下方法 原书7版.pdf",
+    "书籍/计算机/计算机组成与系统结构(第3版） (袁春风、唐杰、杨若瑜、李俊) .pdf",
+    "书籍/计算机/离散数学及其应用.pdf",
+    "书籍/计算机/深入理解计算机系统（原书第三版）.pdf",
+    "书籍/计算机/数据密集型应用系统设计(扫描) (Martin Kleppmann(著) 赵军平 吕云松 耿煜 李三平 (译)) (2).pdf",
+    "书籍/计算机/算法-第4版.pdf",
+    "书籍/计算机/HTTP权威指南（中文版）.pdf",
+    "数字电路/电压、电势、电场.md",
+    "Excalidraw/Drawing 2026-02-08 18.00.30.excalidraw.md",
     "未命名看板.md",
-    "操作系统导论.pdf",
+    "2026-02-08.md",
+    "数字电路/电路两种状态：断路和通路.md",
     "书籍/计算机系统.md",
     "Excalidraw/Drawing 2026-02-07 17.08.32.excalidraw.md",
     "未命名 4.md",
     "未命名 3.md",
     "未命名 1.canvas",
-    "书籍",
     "我是你爹.md",
     "AI/未命名/未命名.md",
     "未命名 2.md",
@@ -223,18 +232,11 @@
     "未命名 5.canvas",
     "未命名 6.canvas",
     "未命名 1.md",
-    "未命名",
     "未命名.md",
     "Vault.md",
     "2026-02-07.md",
     "未命名.canvas",
-    "未命名.base",
     "阿斯顿.md",
-    "-.webp",
-    "Tags",
-    "Excalidraw",
-    "AI/未命名",
-    "重要事项",
-    "AI"
+    "-.webp"
   ]
 }
