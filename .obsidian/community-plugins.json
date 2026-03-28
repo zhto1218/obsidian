@@ -3,5 +3,9 @@
   "obsidian-kanban",
   "obsidian-excalidraw-plugin",
   "homepage",
-  "iconic"
+  "iconic",
+  "dataview",
+  "calendar",
+  "obsidian-tasks-plugin",
+  "quickadd"
 ]

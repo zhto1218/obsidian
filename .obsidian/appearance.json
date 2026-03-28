@@ -1,8 +1,9 @@
 {
-  "cssTheme": "Blue Topaz",
-  "theme": "system",
+  "cssTheme": "Cupertino",
+  "theme": "obsidian",
   "nativeMenus": true,
   "translucency": false,
   "showRibbon": false,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "accentColor": "#e5349b"
 }

@@ -1,14 +1,14 @@
 {
-  "biggerIcons": "mobile",
+  "biggerIcons": "on",
   "clickableIcons": "desktop",
   "showAllFileIcons": false,
-  "showAllFolderIcons": false,
+  "showAllFolderIcons": true,
   "minimalFolderIcons": true,
   "showMarkdownTabIcons": true,
   "showTitleIcons": true,
   "showTagPillIcons": false,
   "showMenuActions": true,
-  "showSuggestionIcons": false,
+  "showSuggestionIcons": true,
   "showQuickSwitcherIcons": true,
   "showMoveFileIcons": true,
   "showItemName": "desktop",
@@ -24,16 +24,79 @@
   "maxBackups": 5,
   "dialogState": {
     "iconMode": true,
-    "emojiMode": false,
+    "emojiMode": true,
     "rulePage": "file"
   },
   "appIcons": {},
   "tabIcons": {},
-  "fileIcons": {},
+  "fileIcons": {
+    "AI": {
+      "icon": "🌈",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "书籍": {
+      "icon": "📚",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "书籍/计算机": {
+      "icon": "🖥️",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "工作": {
+      "icon": "🏀",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "数字电路": {
+      "icon": "lucide-lightbulb",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ],
+      "color": "orange"
+    }
+  },
   "bookmarkIcons": {},
   "tagIcons": {},
   "propertyIcons": {},
   "ribbonIcons": {},
-  "fileRules": [],
+  "fileRules": [
+    {
+      "id": "U7ZKJ",
+      "name": "文件md",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "extension",
+          "operator": "contains",
+          "value": "md"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-cat",
+      "color": "red"
+    },
+    {
+      "id": "n7TrX",
+      "name": "p d f",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "extension",
+          "operator": "contains",
+          "value": "pdf"
+        }
+      ],
+      "enabled": true,
+      "icon": "📓",
+      "color": "cyan"
+    }
+  ],
   "folderRules": []
 }

@@ -1,0 +1,102 @@
+{
+  "biggerIcons": "on",
+  "clickableIcons": "desktop",
+  "showAllFileIcons": false,
+  "showAllFolderIcons": true,
+  "minimalFolderIcons": true,
+  "showMarkdownTabIcons": true,
+  "showTitleIcons": true,
+  "showTagPillIcons": false,
+  "showMenuActions": true,
+  "showSuggestionIcons": true,
+  "showQuickSwitcherIcons": true,
+  "showMoveFileIcons": true,
+  "showItemName": "desktop",
+  "biggerSearchResults": "mobile",
+  "maxSearchResults": 50,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "uncolorQuick": false,
+  "rememberDeletedItems": false,
+  "maxBackups": 5,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": true,
+    "rulePage": "file"
+  },
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {
+    "AI": {
+      "icon": "🌈",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "书籍": {
+      "icon": "📚",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "书籍/计算机": {
+      "icon": "🖥️",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "工作": {
+      "icon": "🏀",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "数字电路": {
+      "icon": "lucide-lightbulb",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ],
+      "color": "orange"
+    }
+  },
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
+  "ribbonIcons": {},
+  "fileRules": [
+    {
+      "id": "U7ZKJ",
+      "name": "文件md",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "extension",
+          "operator": "contains",
+          "value": "md"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-cat",
+      "color": "red"
+    },
+    {
+      "id": "n7TrX",
+      "name": "p d f",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "extension",
+          "operator": "contains",
+          "value": "pdf"
+        }
+      ],
+      "enabled": true,
+      "icon": "📓",
+      "color": "cyan"
+    }
+  ],
+  "folderRules": []
+}
