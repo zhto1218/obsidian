@@ -36,6 +36,27 @@
         "6260909cd4aa658c"
       ]
     },
+    "Projects": {
+      "icon": "🈲",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ],
+      "color": "red"
+    },
+    "Projects/ai-marketing-assistant": {
+      "icon": "🚫",
+      "color": "red",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "Projects/ai-marketing-assistant/specs": {
+      "icon": "lucide-hand",
+      "color": "red",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
     "书籍": {
       "icon": "📚",
       "unsynced": [
