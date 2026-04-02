@@ -1,0 +1,330 @@
+/* ================================================
+   HP2 — Premium Homepage Design System
+   cssclasses: hp2
+   ================================================ */
+
+/* ── Variables ─────────────────────────────── */
+.hp2, :root {
+  --hp2-pink:    #e5349b;
+  --hp2-purple:  #a78bfa;
+  --hp2-blue:    #60a5fa;
+  --hp2-green:   #34d399;
+  --hp2-r:       14px;
+  --hp2-r-sm:    10px;
+  --hp2-r-xs:    7px;
+}
+
+/* ── Page wrapper ───────────────────────────── */
+.hp2 .markdown-preview-view,
+.hp2 .markdown-source-view .cm-content {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+.hp2 .inline-title { display: none; }
+
+/* ── 全局隐藏笔记属性面板 ───────────────── */
+.metadata-container { display: none !important; }
+.hp2 .markdown-preview-view > .dataview { margin: 0; }
+
+/* ── Hero ───────────────────────────────────── */
+.hp2-hero {
+  position: relative;
+  width: 100%;
+  min-height: 190px;
+  border-radius: var(--hp2-r);
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  padding: 2.2rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:
+    radial-gradient(ellipse at 15% 80%,  rgba(229,52,155,0.28)  0%, transparent 52%),
+    radial-gradient(ellipse at 85% 15%,  rgba(96,165,250,0.22)  0%, transparent 52%),
+    radial-gradient(ellipse at 55% 50%,  rgba(167,139,250,0.14) 0%, transparent 65%),
+    linear-gradient(140deg, #0d0d1a 0%, #170a30 55%, #091424 100%);
+}
+
+/* noise texture overlay */
+.hp2-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+/* ── Hero left ──────────────────────────────── */
+.hp2-hero-left   { position: relative; z-index: 1; }
+.hp2-greeting {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.hp2-name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  background: linear-gradient(130deg, #ffffff 20%, rgba(229,52,155,0.85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.55rem;
+}
+.hp2-tagline {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.42);
+  font-style: italic;
+}
+
+/* ── Hero date badge ────────────────────────── */
+.hp2-date {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  min-width: 78px;
+  padding: 0.75rem 1.1rem;
+  border-radius: var(--hp2-r-sm);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.hp2-date-mo {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--hp2-pink);
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+.hp2-date-d {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+.hp2-date-wd {
+  font-size: 0.58rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em;
+}
+
+/* ── Nav grid ───────────────────────────────── */
+.hp2-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 1.2rem;
+}
+
+/* ── Card ───────────────────────────────────── */
+.hp2-card {
+  --ca: var(--hp2-pink);
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--hp2-r-sm);
+  padding: 1.15rem 1.3rem 1.1rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+/* colored top stripe */
+.hp2-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--ca);
+  border-radius: var(--hp2-r-sm) var(--hp2-r-sm) 0 0;
+}
+/* subtle glow on hover */
+.hp2-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.18), 0 0 0 1px color-mix(in srgb, var(--ca) 40%, transparent);
+}
+
+.hp2-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+.hp2-card-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.hp2-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-normal);
+  line-height: 1.2;
+}
+.hp2-card-desc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+/* Links inside card */
+.hp2-card-links { display: flex; flex-direction: column; gap: 0.3rem; }
+.hp2-card-link {
+  display: block;
+  padding: 0.28rem 0.55rem;
+  border-radius: var(--hp2-r-xs);
+  font-size: 0.8rem;
+  color: var(--text-normal) !important;
+  text-decoration: none !important;
+  transition: background 0.15s, color 0.15s;
+}
+.hp2-card-link:hover {
+  background: color-mix(in srgb, var(--ca) 10%, transparent);
+  color: var(--ca) !important;
+}
+
+/* ── Stats bar ──────────────────────────────── */
+.hp2-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+.hp2-stat {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--hp2-r-sm);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  transition: border-color 0.2s;
+}
+.hp2-stat:hover { border-color: var(--hp2-pink); }
+.hp2-stat-icon { font-size: 1.15rem; flex-shrink: 0; }
+.hp2-stat-val {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-normal);
+  line-height: 1;
+}
+.hp2-stat-lbl {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+  line-height: 1;
+}
+
+/* ── Bottom two-col ─────────────────────────── */
+.hp2-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+.hp2-panel {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--hp2-r-sm);
+  padding: 1rem 1.15rem;
+  min-height: 220px;
+}
+.hp2-panel-title {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.7rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ── Task list ──────────────────────────────── */
+.hp2-tasks { display: flex; flex-direction: column; gap: 0.35rem; }
+.hp2-task {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.32rem 0.45rem;
+  border-radius: var(--hp2-r-xs);
+  transition: background 0.15s;
+}
+.hp2-task:hover { background: var(--background-modifier-hover); }
+.hp2-task-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--hp2-pink);
+  flex-shrink: 0;
+}
+.hp2-task a {
+  font-size: 0.81rem;
+  color: var(--text-normal) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.hp2-task a:hover { color: var(--hp2-pink) !important; }
+.hp2-empty {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+/* ── Recent list ────────────────────────────── */
+.hp2-recent { display: flex; flex-direction: column; gap: 0.4rem; }
+.hp2-recent-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.32rem 0.45rem;
+  border-radius: var(--hp2-r-xs);
+  transition: background 0.15s;
+}
+.hp2-recent-row:hover { background: var(--background-modifier-hover); }
+.hp2-recent-info { display: flex; flex-direction: column; gap: 0.08rem; min-width: 0; }
+.hp2-recent-info a {
+  font-size: 0.81rem;
+  color: var(--text-normal) !important;
+  text-decoration: none !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hp2-recent-info a:hover { color: var(--hp2-purple) !important; }
+.hp2-recent-folder { font-size: 0.65rem; color: var(--text-faint); }
+.hp2-recent-time {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Quote footer ───────────────────────────── */
+.hp2-quote {
+  text-align: center;
+  padding: 1.1rem 2rem;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+  border-top: 1px solid var(--background-modifier-border);
+}
+.hp2-qmark {
+  font-size: 1.4rem;
+  font-style: normal;
+  color: var(--hp2-pink);
+  vertical-align: -0.25rem;
+  margin-right: 0.25rem;
+  line-height: 0;
+}

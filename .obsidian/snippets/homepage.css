@@ -1,0 +1,347 @@
+/* ============================================
+   Obsidian Homepage — Rainbell Style
+   cssclasses: homepage
+   ============================================ */
+
+/* ── 变量 ────────────────────────────────── */
+.homepage {
+  --hp-accent:       #e5349b;
+  --hp-accent-2:     #a78bfa;
+  --hp-accent-3:     #60a5fa;
+  --hp-radius:       12px;
+  --hp-radius-sm:    8px;
+  --hp-max-width:    900px;
+  --hp-hero-height:  240px;
+
+  /* 背景图：替换为本地路径或其他在线图片
+     Mac:     url("app://local/Users/you/Pictures/bg.jpg")
+     Windows: url("app://local/C:/Users/you/Pictures/bg.jpg") */
+  --hp-bg-image: url("https://images.unsplash.com/photo-1490750967868-88df5691cc5b?w=1600&q=80&auto=format&fit=crop");
+}
+
+/* ── 页面容器 ─────────────────────────────── */
+.homepage .markdown-preview-view,
+.homepage .markdown-source-view .cm-content {
+  max-width: var(--hp-max-width);
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+.homepage .inline-title { display: none; }
+
+/* ── Hero 横幅 ───────────────────────────── */
+.hp-hero {
+  position: relative;
+  width: calc(100% + 4rem);
+  margin-left: -2rem;
+  height: var(--hp-hero-height);
+  background-image: var(--hp-bg-image);
+  background-size: cover;
+  background-position: center 35%;
+  border-radius: 0 0 var(--hp-radius) var(--hp-radius);
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hp-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+    rgba(0,0,0,0.0) 40%,
+    rgba(0,0,0,0.58) 100%);
+}
+.hp-hero-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.2rem;
+}
+
+/* ── 日期徽章 ────────────────────────────── */
+.hp-date-badge {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: var(--hp-radius-sm);
+  padding: 0.5rem 0.85rem;
+  text-align: center;
+  min-width: 62px;
+  line-height: 1;
+}
+.hp-date-mo {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  margin-bottom: 0.15rem;
+}
+.hp-date-d {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.1rem;
+}
+.hp-date-wd {
+  font-size: 0.63rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.04em;
+}
+.hp-hero-tagline {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.9rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+  margin-bottom: 0.2rem;
+}
+.hp-hero-sub {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.78rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+
+/* ── 分隔线 ─────────────────────────────── */
+.homepage hr {
+  border: none;
+  border-top: 1px solid var(--background-modifier-border);
+  margin: 1.5rem 0;
+  opacity: 0.4;
+}
+
+/* ── Pill 导航 ───────────────────────────── */
+.hp-nav {
+  display: flex;
+  gap: 0;
+  padding: 1.5rem 0 0.5rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 0.5rem;
+}
+.hp-nav-col {
+  flex: 1;
+  min-width: 0;
+  padding-right: 1.2rem;
+}
+.hp-nav-col:last-child { padding-right: 0; }
+
+.hp-nav-label {
+  font-size: 0.67rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--hp-accent);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.hp-nav-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--hp-accent);
+  opacity: 0.25;
+  margin-left: 0.3rem;
+}
+.hp-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* pill 内的 a 链接 */
+.hp-pill a,
+.hp-pill .internal-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  background: var(--background-secondary);
+  color: var(--text-normal) !important;
+  text-decoration: none !important;
+  transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.12s;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hp-pill a:hover,
+.hp-pill .internal-link:hover {
+  border-color: var(--hp-accent);
+  color: var(--hp-accent) !important;
+  background: rgba(229,52,155,0.06);
+  transform: translateX(2px);
+}
+
+/* ── 两栏布局 ────────────────────────────── */
+.hp-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.hp-panel {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--hp-radius-sm);
+  padding: 1rem 1.1rem;
+}
+.hp-panel-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ── 二级标题 ────────────────────────────── */
+.homepage h2 {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.4rem;
+}
+
+/* ── 项目追踪表格 ─────────────────────────── */
+.homepage table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  border-radius: var(--hp-radius-sm);
+  overflow: hidden;
+}
+.homepage table th {
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  padding: 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  text-align: left;
+}
+.homepage table td {
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  vertical-align: middle;
+}
+.homepage table tr:last-child td { border-bottom: none; }
+.homepage table tr:hover td { background: var(--background-secondary); }
+
+/* ── 状态徽章 ────────────────────────────── */
+.hp-badge {
+  display: inline-block;
+  padding: 0.18rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.hp-badge-pink  { background: rgba(229,52,155,0.12); color: #e5349b; }
+.hp-badge-blue  { background: rgba(96,165,250,0.14); color: #3b82f6; }
+.hp-badge-green { background: rgba(52,211,153,0.14); color: #059669; }
+.hp-badge-gray  { background: rgba(156,163,175,0.15); color: var(--text-muted); }
+
+/* ── 进度条 ─────────────────────────────── */
+.hp-bar-wrap {
+  background: var(--background-modifier-border);
+  border-radius: 99px;
+  height: 5px;
+  width: 100px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hp-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--hp-accent), var(--hp-accent-2));
+}
+
+/* ── 任务列表 ────────────────────────────── */
+.homepage .task-list-item {
+  padding: 0.3rem 0;
+  font-size: 0.875rem;
+}
+.homepage .task-list-item input[type="checkbox"] {
+  accent-color: var(--hp-accent);
+  margin-right: 0.45rem;
+}
+
+/* ── Dataview 表格 ───────────────────────── */
+.homepage .dataview.table-view-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+.homepage .dataview.table-view-table th {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  text-align: left;
+}
+.homepage .dataview.table-view-table td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.homepage .dataview.table-view-table tr:hover td {
+  background: var(--background-secondary);
+}
+
+/* ── Callout ────────────────────────────── */
+.homepage .callout {
+  border-radius: var(--hp-radius-sm);
+  border-left-width: 3px;
+}
+.homepage .callout[data-callout="quote"] {
+  background: linear-gradient(135deg,
+    rgba(229,52,155,0.05), rgba(167,139,250,0.04));
+  border-left-color: var(--hp-accent);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* ── 库统计行 ────────────────────────────── */
+.hp-stats {
+  display: flex;
+  gap: 2rem;
+  padding: 0.75rem 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--background-modifier-border);
+  margin-top: 1.5rem;
+}
+.hp-stat strong {
+  color: var(--text-normal);
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+/* ── 页脚 ───────────────────────────────── */
+.homepage p:last-child {
+  margin-top: 2rem;
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  text-align: center;
+  opacity: 0.55;
+}

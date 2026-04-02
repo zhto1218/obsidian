@@ -7,5 +7,9 @@
   "dataview",
   "calendar",
   "obsidian-tasks-plugin",
-  "quickadd"
+  "quickadd",
+  "buttons",
+  "obsidian-banners",
+  "heatmap-tracker",
+  "open-in-terminal"
 ]

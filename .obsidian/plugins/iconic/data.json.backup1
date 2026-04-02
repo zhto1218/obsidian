@@ -36,6 +36,13 @@
         "6260909cd4aa658c"
       ]
     },
+    "Excalidraw": {
+      "icon": "excalidraw-icon",
+      "color": "blue",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
     "Projects": {
       "icon": "🈲",
       "unsynced": [
@@ -63,14 +70,29 @@
         "6260909cd4aa658c"
       ]
     },
+    "书籍/小说": {
+      "icon": "🧑‍🚀",
+      "color": "blue",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "书籍/杂项": {
+      "icon": "🌐",
+      "color": "yellow",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
     "书籍/计算机": {
       "icon": "🖥️",
       "unsynced": [
         "6260909cd4aa658c"
       ]
     },
-    "工作": {
-      "icon": "🏀",
+    "心性": {
+      "icon": "🤍",
+      "color": "green",
       "unsynced": [
         "6260909cd4aa658c"
       ]
@@ -81,6 +103,20 @@
         "6260909cd4aa658c"
       ],
       "color": "orange"
+    },
+    "日常": {
+      "icon": "lucide-calendar-days",
+      "color": "purple",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "日常/pic": {
+      "icon": "lucide-picture-in-picture-2",
+      "color": "purple",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
     }
   },
   "bookmarkIcons": {},

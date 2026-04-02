@@ -1,3 +1,6 @@
 {
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "readableLineLength": true,
+  "showLineNumber": false,
+  "attachmentFolderPath": "日常/pic"
 }

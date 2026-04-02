@@ -5,5 +5,9 @@
   "translucency": false,
   "showRibbon": false,
   "showViewHeader": true,
-  "accentColor": "#e5349b"
+  "accentColor": "#e5349b",
+  "enabledCssSnippets": [
+    "homepage",
+    "hp2"
+  ]
 }

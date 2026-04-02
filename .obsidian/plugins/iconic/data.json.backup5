@@ -36,6 +36,34 @@
         "6260909cd4aa658c"
       ]
     },
+    "Excalidraw": {
+      "icon": "excalidraw-icon",
+      "color": "blue",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "Projects": {
+      "icon": "🈲",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ],
+      "color": "red"
+    },
+    "Projects/ai-marketing-assistant": {
+      "icon": "🚫",
+      "color": "red",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
+    "Projects/ai-marketing-assistant/specs": {
+      "icon": "lucide-hand",
+      "color": "red",
+      "unsynced": [
+        "6260909cd4aa658c"
+      ]
+    },
     "书籍": {
       "icon": "📚",
       "unsynced": [
@@ -48,8 +76,9 @@
         "6260909cd4aa658c"
       ]
     },
-    "工作": {
-      "icon": "🏀",
+    "心性": {
+      "icon": "🤍",
+      "color": "green",
       "unsynced": [
         "6260909cd4aa658c"
       ]

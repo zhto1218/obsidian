@@ -4,20 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "9d2b03ee33ca6006",
+        "id": "5ea3cabf3fd8e789",
         "type": "tabs",
         "children": [
           {
-            "id": "31c8a6cdf6344f59",
+            "id": "469072e2d85924ad",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "日常/Drawing 2026-03-31 16.13.46.excalidraw.md"
+              },
+              "pinned": true,
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-03-31 16.13.46.excalidraw"
+            }
+          },
+          {
+            "id": "d08773ed80598136",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "pdf",
+              "state": {
+                "file": "书籍/杂项/毛泽东选集（全4卷）.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "毛泽东选集（全4卷）"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -36,7 +53,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -74,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 367.5
+    "width": 395.5
   },
   "right": {
     "id": "8771ef3f72dc39af",
@@ -108,11 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "日常/Drawing 2026-03-31 16.13.46.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "Drawing 2026-03-31 16.13.46.excalidraw 的出链列表"
             }
           },
           {
@@ -150,12 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "书籍/杂项/毛泽东选集（全4卷）.pdf",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "毛泽东选集（全4卷） 的大纲"
             }
           },
           {
@@ -169,13 +188,13 @@
             }
           },
           {
-            "id": "10a520005daa4262",
+            "id": "468ae7a46fec1600",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "excalidraw-sidepanel",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "excalidraw-icon",
+              "title": "Excalidraw 侧边面板"
             }
           }
         ],
@@ -199,48 +218,55 @@
       "workspaces:管理工作区布局": false,
       "obsidian-git:Open Git source control": false,
       "homepage:Open homepage": true,
-      "iconic:打开规则书": false
+      "iconic:打开规则书": false,
+      "random-note:开始漫游笔记": false
     }
   },
-  "active": "31c8a6cdf6344f59",
+  "active": "0d53108d584cc48e",
   "lastOpenFiles": [
-    "未命名.md",
-    "心性/事缓则圆,人缓则安.md",
-    "Projects/ai-marketing-assistant/specs/promotion-reference-cases-pre-generation-design.md",
-    "Excalidraw/Drawing 2026-02-08 18.00.30.excalidraw.md",
-    "心性",
-    "工作/选题中心上线.md",
-    "未命名/未命名.base",
-    "未命名.base",
-    "未命名看板.md",
-    "数字电路/电压、电势、电场.md",
-    "数字电路/导线内的电场线与导线表面平行.md",
-    "数字电路/电源 电池、发电机.md",
-    "Projects/ai-marketing-assistant/specs/promotion-reference-cases-backend-implementation-plan.md",
-    "Projects/specs/promotion-hotspot-and-image-analysis-summary.md",
-    "Projects/ai-marketing-assistant/specs",
-    "Projects/ai-marketing-assistant",
-    "Projects/specs",
-    "Projects",
-    "书籍/计算机/趣谈网络协议.pdf",
+    "日常/Drawing 2026-03-31 16.13.46.excalidraw.md",
+    "书籍/杂项/毛泽东选集（全4卷）.pdf",
+    "书籍/小说/剑来（1-49册）.pdf",
     "书籍/电子书-开窍开悟开智.pdf",
-    "工作/好的/未命名.md",
-    "工作/未命名 1.md",
-    "工作/好的",
-    "工作/未命名.md",
-    "2026-02-08.md",
-    "2026-03-03.md",
-    "漫剧/《我妈是龙傲天》.md",
-    "数字电路/整体电场.md",
-    "数字电路/静电平衡.md",
-    "数字电路/电路两种状态：断路和通路.md",
-    "书籍/计算机系统.md",
-    "Excalidraw/Drawing 2026-02-07 17.08.32.excalidraw.md",
-    "未命名 4.md",
-    "未命名 3.md",
+    "书籍/小说/剑来（1-49册） 1.epub",
+    "书籍/小说/剑来（1-49册）.epub",
+    "书籍/小说",
+    "书籍/杂项/人妻约会指南（未删减版）.pdf",
+    "书籍/计算机/计算机是如何工作的：人人都能懂的计算机软硬件工作原理（华章程序员书库） - 马修·贾斯蒂斯.pdf",
+    "书籍/计算机/网络是怎样连接的 (图灵程序设计丛书).pdf",
+    "书籍/杂项",
+    "日常/pic/1cc3317a3ee4a191f46eec847029d858.jpg",
+    "心性/事缓则圆,人缓则安.md",
+    "心性/专注自己.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-31-promotion-content-angle-suggestions-design.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-31-promotion-h5-publish-design.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-31-promotion-platform-suggestions-design.md",
+    "Projects/ai-marketing-assistant/specs/2026-04-01-promotion-content-task-scene-images-design.md",
+    "Projects/ai-marketing-assistant/specs/2025-02-14-promotion-store-config-design.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-28-promotion-target-audience-suggestions-design.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-27-promotion-store-nearby-discovery-design.md",
+    "Projects/ai-marketing-assistant/specs/promotion-store-config-design.md",
+    "Excalidraw/Drawing 2026-02-08 18.00.30.excalidraw.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-30-promotion-reference-cases-design.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-28-promotion-store-image-tags-design.md",
+    "Projects/ai-marketing-assistant/specs/2026-03-27-promotion-daily-content-generation-design.md",
+    "Projects/ai-marketing-assistant/specs/promotion-content-task-scene-images-implementation-plan.md",
+    "Projects/ai-marketing-assistant/specs/promotion-content-task-scene-images-design.md",
+    "Excalidraw/cropped_趣谈网络协议.md",
+    "Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
+    "Excalidraw/Scripts/Downloaded/Mindmap Builder.md",
+    "Projects/ai-marketing-assistant/specs/promotion-content-angle-suggestions-design.md",
+    "Projects/ai-marketing-assistant/specs/promotion-h5-publish-design.md",
+    "Projects/ai-marketing-assistant/specs/promotion-h5-publish-implementation-plan.md",
+    "Projects/ai-marketing-assistant/specs/promotion-platform-suggestions-design.md",
+    "Projects/ai-marketing-assistant/specs/promotion-reference-cases-backend-implementation-plan.md",
+    "Projects/ai-marketing-assistant/specs/promotion-reference-cases-pre-generation-design.md",
+    "下载.jpeg",
+    "下载 (2).jpeg",
+    "数字电路/未命名.canvas",
+    "Obsidian/Attachements/faroukhomepage2.png",
+    "screen.png",
     "未命名 1.canvas",
-    "我是你爹.md",
-    "AI/未命名/未命名.md",
     "AI/未命名/未命名.canvas",
     "未命名 7.canvas",
     "未命名 4.canvas",

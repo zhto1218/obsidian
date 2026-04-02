@@ -1,0 +1,52 @@
+在 `backend/app/modules/promotions/` 下新增推广模块的店铺配置能力，支持多店铺、分步保存、组织隔离，以及店铺级 AI 辅助能力。
+- 创建店铺并绑定行业：民宿 / 餐厅 / 美业
+- 分步保存：名称、地址/GPS、菜品/环境照片（多张）、目标客群、特色服务、预订渠道
+- 查询店铺列表、店铺详情、更新店铺信息
+- AI 推荐店铺名称，返回 3~5 个候选名
+- AI 推荐投放平台，在 `douyin` / `xiaohongshu` 中返回候选和简短理由
+- 基于店铺当前已保存的 `images` 调用视觉模型生成标签
+- 一个组织下允许多个店铺
+- `industry_type` 仅允许创建时写入，后续不可修改
+- 使用“主表 + 步骤状态字段 + 局部更新”的方案，不引入草稿表
+- 店铺封面存 `cover_image_url`（单张 URL）
+- 步骤3支持多张照片上传，存储于 `images`（JSONB 数组），通过 MinIO 上传接口写入
+- 店名推荐使用 `OPENAI_COMPAT_CHEAP_*` 配置
+- 图片标签生成使用 `OPENAI_API_KEY`、`OPENAI_BASE_URL`、`OPENAI_VISION_MODEL_ID`、`OPENAI_VISION_TIMEOUT_SECONDS`
+表名：`mkt_promotion_store`
+关键字段：
+- `id`
+- `org_id`
+- `industry_type`
+- `store_name`
+- `address`
+- `longitude`
+- `latitude`
+- `cover_image_url`
+- `images`（JSONB 数组，菜品/环境照片列表）
+- `target_audience`
+- `featured_services`
+- `booking_channels`
+- `setup_step`
+- `last_completed_step`
+- `setup_completed`
+- `created_at`
+- `updated_at`
+- `deleted_at`
+说明：
+- `featured_services`、`booking_channels`、`images` 使用 JSONB 数组
+- 通过 `setup_step`、`last_completed_step`、`setup_completed` 支持分步保存状态
+- `POST /mkt/api/v1/promotion/stores`
+- `GET /mkt/api/v1/promotion/stores`
+- `GET /mkt/api/v1/promotion/stores/{store_id}`
+- `PATCH /mkt/api/v1/promotion/stores/{store_id}`
+- `POST /mkt/api/v1/promotion/stores/{store_id}/name-suggestions`
+- `POST /mkt/api/v1/promotion/stores/{store_id}/platform-suggestions`
+- `POST /mkt/api/v1/promotion/stores/{store_id}/food-images`（multipart/form-data，files 字段，支持多张）
+- `POST /mkt/api/v1/promotion/stores/{store_id}/image-tags`
+- 从店铺当前配置拼接提示词
+- 以 JSON 形式要求模型返回 3~5 个 `name` / `reason`
+- 图片标签接口从当前店铺已保存的 `images` 读取图片，不额外接收请求体
+- 图片标签接口逐张调用视觉模型，聚合去重后返回 `tags`
+- 增加超时、异常捕获、结构校验与日志
+- 草稿历史版本
+- 审批流/发布流
